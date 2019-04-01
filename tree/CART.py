@@ -28,6 +28,7 @@ def createTree(dataSet, leafType=regLeaf, errType=regErr, ops=[1,4]):
     retTree['right'] = createTree(rSet, leafType, errType, ops)
     return retTree
 
+
 # dataSet[-1] 是回归的值
 # split a tree
 def regLeaf(dataSet):
